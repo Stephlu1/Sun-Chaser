@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sun Chaser</title>
+        <link rel="stylesheet" href="style.css"> 
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <h1>Sun Chaser</h1>
+        <p>Your ultimate guide to the best sunrise & sunset spots in the Greater Toronto Area</p>
+    
+    <section id="filters">
+        <h2>Find Your Perfect View</h2>
+        <form>
+          <label for="activity">Activity Level:</label>
+          <select id="activity" name="activity">
+            <option value="all">All</option>
+            <option value="easy">Easy (No hiking)</option>
+            <option value="moderate">Moderate (Short walk)</option>
+            <option value="hard">Hard (Hiking required)</option>
+          </select>
+    
+          <label for="accessibility">Accessibility:</label>
+          <select id="accessibility" name="accessibility">
+            <option value="all">All</option>
+            <option value="accessible">Wheelchair Accessible</option>
+            <option value="not_accessible">Not Accessible</option>
+          </select>
+    
+          <label for="budget">Budget:</label>
+          <select id="budget" name="budget">
+            <option value="all">All</option>
+            <option value="free">Free</option>
+            <option value="paid">Paid Entry</option>
+          </select>
+        </form>
+      </section>
+    
+      <section id="featured-spots">
+        <h2>Top Spots Right Now</h2>
+        <div class="location-list">
+        </div>
+    </section>
+    
+    <section id="live-updates">
+      <h2>Live Updates</h2>
+      <div id="weather"></div>
+      <div id="goldenhour"></div>
+      </section>
+    
+      <footer>
+        <p>Made for use in the GTA</p>
+      </footer>
+    </body>
+        </html>
